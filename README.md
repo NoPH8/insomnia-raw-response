@@ -1,12 +1,12 @@
 # insomnia-raw-response
 
-Мінімальний тестовий HTTP-сервер на стандартній бібліотеці Python.
+A minimal test HTTP server using Python's standard library.
 
 ## Endpoint
 
 - `GET /file`
-- Повертає файл `test.txt.p7s`
-- Заголовки відповіді:
+- Returns the file `test.txt.p7s`
+- Response headers:
   - `Content-Type: application/x-p7s`
   - `Content-Disposition: attachment; filename="test.txt.p7s"`
 
@@ -16,7 +16,7 @@
 python3 main.py
 ```
 
-Сервер запускається на `http://0.0.0.0:8080`.
+The server starts at `http://0.0.0.0:8080`.
 
 ## Optional: curl
 
@@ -24,7 +24,7 @@ python3 main.py
 curl -i http://localhost:8080/file
 ```
 
-Зберегти файл локально:
+Save the file locally:
 
 ```bash
 curl -OJ http://localhost:8080/file
