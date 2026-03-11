@@ -1,6 +1,4 @@
-# insomnia-raw-response
-
-A minimal test HTTP server using Python's standard library.
+This repo is a helper to ivestigate [Insomnia issue #9619](https://github.com/Kong/insomnia/issues/9619): a minimal test HTTP server using Python's standard library.
 
 ## Endpoint
 
